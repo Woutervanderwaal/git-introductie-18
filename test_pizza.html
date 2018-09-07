@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html>
 	<body>
+	<h2>Wouter v d Waal</h2>
 	<h2>Pizza calculator</h2>
 
 	
 		<script>
-			function enkele_bestelling(){
+			function enkele_bestelling(){ // een functie met een while loop er in 
 				prijs = 0
 
-				var grootte = prompt("Welke groote pizza wilt u, klein(€6.99)(20 cm), medium(€8.99)(25 cm), groot(€10.99)(30 cm)")
-				var topping = prompt("Welke toppings wilt u, kaas(€ 0.00), kip(€ 1.99), salami(€ 2.99)")
-				var aantal = prompt("Hoe veel wilt er hier van? :")
+				var grootte = prompt("Welke groote pizza wilt u, klein(€6.99)(20 cm), medium(€8.99)(25 cm), groot(€10.99)(30 cm)")// prompt voor de groten van de pizza
+				var topping = prompt("Welke toppings wilt u, kaas(€ 0.00), kip(€ 1.99), salami(€ 2.99)")// prompt voor de toppings van de pizza
+				var aantal = prompt("Hoe veel wilt er hier van? :")// een prompt hoe veel je er van die pizza wil
 				
 
-				if (grootte == "klein") {
+				if (grootte == "klein") { //if command als de grootte klein is
 					prijs = prijs + 6.99
 				}
 
-				if (grootte == "medium") {
+				if (grootte == "medium") { //if command als de grootte medium is
 					prijs = prijs + 8.99
 				}
-				if (grootte == "groot") {
+				if (grootte == "groot") { //if command als de grootte groot is
 					prijs = prijs + 10.99
 				}
 
 
-				if (topping == "kaas") {
+				if (topping == "kaas") { //if command als de topping kaas is
 					prijs = prijs + 0.00
 				}
 
-				if (topping == "kip") {
+				if (topping == "kip") { //if command als de topping kip is
 					prijs = prijs + 1.99
 				}
-				if (topping == "salami") {
+				if (topping == "salami") { //if command als de toppinf salami is
 					prijs = prijs + 2.99
 				}
 
-				prijs = prijs * aantal
+				prijs = prijs * aantal // aantal deel berekenen
 
-				document.write("U heeft bestelt een pizza grootte: <b>" + grootte + "</b>, met topping: <b>" + topping +"</b>, aantal: <b>"+ aantal + "</b>, prijs: " + "<i>€"+prijs.toFixed(2)+ "</i><br>")
-				return prijs;
+				document.write("U heeft bestelt een pizza grootte: <b>" + grootte + "</b>, met topping: <b>" + topping +"</b>, aantal: <b>"+ aantal + "</b>, prijs: " + "<i>€"+prijs.toFixed(2)+ "</i><br>")//text voor overzicht
+				return prijs; // een return voor de prijs zodat je nog een keer met de while loop een bestelling kan doen
 			}
 
 			
 
 			
-			var afronding = "bestellen"
-			var totale_prijs = 0
+			var afronding = "bestellen" // variable voor de afronding
+			var totale_prijs = 0 // als je nog een keer wil bestellen is de prijs weer 0
 			while (afronding != "betalen"){
 				totale_prijs += enkele_bestelling()
 				afronding = prompt("Wilt u nog meer bestellen doe dan(bestellen), als u wilt betalen doe dan (betalen)")
 			}
-			totale_prijs = totale_prijs.ToFixed(2)
-			document.write("de prijs is: €" + totale_prijs)
+			totale_prijs = totale_prijs.ToFixed(2) // while command voor een loop zodat je zoveel pizzas wil betellen als je wilt
+			document.write("de prijs is: €" + totale_prijs)// text voor en singelen pizza prijs
 		</script>
 
 
 			<button onclick="eind()" >Naar betaling</button>
 		<script>
-			totale_prijs = totale_prijs.ToFixed(2)
+			//button voor de eind
+			totale_prijs = totale_prijs.ToFixed(2) // fixed 2 prijs zodat het niet nullen gaat optellen
 			function eind(){
-				alert("Wilt u €" + totale_prijs + " betalen")
+				alert("Wilt u €" + totale_prijs + " betalen")//funtie
 			}
 		</script>
 	</body>
