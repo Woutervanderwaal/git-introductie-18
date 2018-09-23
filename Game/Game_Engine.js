@@ -100,12 +100,61 @@ if(buttons["b3"].value == "X" && buttons["b5"].value == "X" && buttons["b7"].val
     
 }
 
+if(buttons["b1"].value == "O" && buttons["b2"].value == "O" && buttons["b3"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
 
+}
 
+if(buttons["b4"].value == "O" && buttons["b5"].value == "O" && buttons["b6"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
 
+}
 
+if(buttons["b7"].value == "O" && buttons["b8"].value == "O" && buttons["b9"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
 
+}
 
+if(buttons["b1"].value == "O" && buttons["b4"].value == "O" && buttons["b7"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
+
+}
+
+if(buttons["b2"].value == "O" && buttons["b5"].value == "O" && buttons["b8"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
+
+}
+
+if(buttons["b3"].value == "O" && buttons["b6"].value == "O" && buttons["b9"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
+
+}
+
+if(buttons["b1"].value == "O" && buttons["b5"].value == "O" && buttons["b9"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
+
+}
+
+if(buttons["b3"].value == "O" && buttons["b5"].value == "O" && buttons["b7"].value == "O"){
+    setTimeout(function(){
+     alert("O heeft gewonnen!");
+    },0,01) ;
+
+}
 
 }   
     
