@@ -1,0 +1,71 @@
+div{
+    font-family: Roboto;
+    padding: 0px 350px 0px 350px;
+
+}
+
+p.para1{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: Roboto;
+
+}
+
+p.para2{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: Roboto;
+    background-color: #def6ed;
+    padding: 25px;
+    border-color: #def6ed;
+    border-width: 4px;
+    border-style: solid;
+}
+
+hr{
+    width: 830px;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 40px;
+
+}
+
+h1{
+    font-size: 36px;
+    line-height: 36px;
+    
+}
+
+ul{
+    line-height: 30px;
+
+}
+
+.img1{
+    height:75% ;
+    width:75% ;
+    line-height: 40px;
+}
+
+.img2{
+    height:75% ;
+    width:75% ;
+    line-height: 40px;
+}
+
+button{
+    background-color: rgb(8, 202, 8);
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px;
+}
