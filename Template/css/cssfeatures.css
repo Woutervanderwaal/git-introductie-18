@@ -1,0 +1,105 @@
+body {
+    background-image: url(header_bg.jpg);
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px
+}
+
+.img1 {
+    margin-top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    height: 40px;
+}
+
+.header a {
+    display: inline-block;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: #818181;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    transition: 0.5s;
+    border-left: 1px solid white;
+}
+
+.header a:hover {
+    background-color: rgb(58, 57, 57);
+    color: black;
+}
+
+.marginbutton {
+    margin-right: 40px
+}
+
+.button {
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 28px;
+    margin: 9px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    max-height: 28px;
+}
+
+table {
+    color: white;
+    margin-left: auto;
+    margin-right: 350px;
+    margin-top: 32px;
+    padding: 5px;
+    margin-bottom: 60px;
+}
+
+td {
+    text-align: center;
+    width: 110px;
+    margin-bottom: 10px;
+    font-family: Roboto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+.divleft {
+    margin-left: 450px;
+}
+
+p {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+li {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    margin: 5px;
+}
