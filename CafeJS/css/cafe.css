@@ -1,0 +1,49 @@
+.button{
+    color: black;
+    padding: 15px 60px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.paybutton{
+    color: black;
+    padding: 15px 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+}
+
+.resetbutton{
+    color: black;
+    padding: 15px 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.divcenter{
+    max-width: 900px;
+    margin: auto
+}
+
+table{
+    border: 0.1em solid;
+    border-collapse: collapse;
+}
+
+td{
+    border: 0.1em;
+    text-align: center;
+    width: 10em;
+    padding: 1em;
+}
+
+th{
+    border: 0.1em solid;
+    text-align: center;
+    width: 10em;
+    padding: 1em;
+    background-color: gray;
+    
+    
+}
+
