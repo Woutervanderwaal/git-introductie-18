@@ -611,36 +611,37 @@ function story_teller()
 
     storys = ["" , "We beginnen met het verhaal, maar eerst wat informatie",
     "De GIF zijn maar 800x450 dat is niet zo erg, zoom in met in je browser om het spel wat groter te krijgen, ook is het mogelijk om 2 of 3 keys te vinden op 1 plek hou je backpack in de gaten!",
-    "Het was de nacht voor dat je op kamp ging met je vrieden.",
-    "Je kwam met je eigen auto, hij had wat problemen maar je overkeek dat voor de avontuur die je te wachten stond",
-    "Je was goed opweg het ging allemaal wel erg goed... Misschien iets te goed.",
-    "je ging steeds verder het bos in en verder en verder... op zoek naar de kamping plek en het avontuur.",
-    "maar dit avontuur werd snel een nacht merrie toen alle problemen in 1 keer begonnen in te slaan",
-    "daar stond je. Je doom te verwachten er was niks meer dat je kon doen",
-    "Je hoorde een zacht stemmetje",
+    "Het was de nacht voor dat je op kamp ging met je vrienden.",
+    "Je was op weg met je eigen auto, die had wel wat problemen maar je tot nu bracht hij je naar je avontuur wat je te wachten stond",
+    "Je was goed opweg, het ging allemaal wel erg goed... misschien iets te goed.",
+    "Je ging steeds verder het bos in en verder en verder... op zoek naar de campingplek en het avontuur.",
+    "Het werd donkerder en donkerder.....",
+    "Toen hoorde je een knal, een zucht en een klein piepje.......de auto had het begeven.",
+    "Toen hoorde je een zacht stemmetje",
     "Je keek rond",
-    "Het vertelde je over een kans",
-    "'Ik heb een deal voor je, ik heb de auto delen voor je die je nodig hebt om alles te maken maar dan moet jij wel mijn spel spelen.' zij het stemmetje",
-    "'wat is je spel dan' zij je.",
-    "'geloof jij in je geluk' zij het stemmetje.",
-    "'waarom ?...' zij je",
-    "'Wil je hier weg komen of niet!', zij het stemmetje een beetje aggresief",
-    "'Hhhuuu rustig aan!, maar ja ik denk dat ik in mijn geluk kan geloven', zij je",
-    "'Oke loop op dit pad door tot het huis, en ik adviseer je auto ook er naartoe te krijgen' zij het stemmetje",
-    "je stond voor een klein oud huis midden in het bos, 'waarom zou iemand hier een huis willen ?' dacht je",
+    "Het stemmetje vertelde je over een kans",
+    "'Ik heb een deal voor je, ik heb de auto onderdelen voor je die je nodig hebt om alles te maken, maar dan moet jij wel mijn spel spelen.' zei het stemmetje",
+    "'wat is je spel dan' vroeg je.",
+    "'geloof jij in je geluk' zei het stemmetje.",
+    "'waarom ?...' vroeg je",
+    "'Wil je hier weg komen of niet!', zei het stemmetje een beetje aggresief",
+    "'Hhhuuu rustig aan!, maar ja ik denk dat ik in mijn geluk kan geloven', zei je",
+    "'Oke, loop op dit pad door tot het huis, en ik adviseer je, je auto ook er naartoe te krijgen' zei het stemmetje",
+    "je stond voor een klein oud huis midden in het bos, 'waarom zou iemand hier een huis willen?' dacht je nog",
     "je stond voor het huis, het stemmetje klonk weer",
-    "'Je moet hier je geluk testen op het beste als jij voor 12 uur s'nachts er uit ben met alle onderdelen kan je gaan. Anders zullen de gevolgen vallen",
-    "'Wat zijn de gevolgen dan?' zij je",
-    "'Dat zie je dan wel' zij het stemmetje",
-    "'lees goed wat op deze pagina staat' zij het stemmetje",
-    "1. je hebt maar 45 min(zette) om alle onderdelen te vinden",
+    "'Je moet hier je geluk testen op het, je wint als je voor 12 uur s'nachts er uit het huis bent, met alle auto onderdelen. Anders zullen de gevolgen voor jou zijn",
+    "'Wat zijn de gevolgen dan?' zei je",
+    "'Dat zie je dan wel' zei het stemmetje",
+    "'lees goed wat op deze pagina staat' zei het stemmetje",
+    "1. je hebt maar 45 minuten (=zetten) om alle auto onderdelen te vinden",
     "2. niet alle deuren/kasten zijn open, om deze open te maken moet je sleutels hebben",
     "3. elk spel is random dus je kan geen informatie krijgen van anderen",
-    "toen klonk het stemmetje voor het laatst 'ik zie jou na 45 minuten'", 
-    "in je zelf dacht je 'het moet altijd mij zijn(zucht)'",
+    "4. Om te winnen moet je alle auto onderdelen hebben en weer bij de auto staan.",
+    "toen klonk het stemmetje voor het laatst 'ik zie jou over 45 minuten'", 
+    "in je zelf dacht je 'ze moeten altijd mij hebben (zucht)'",
     ""]
 
-    if(number_story == 29)
+    if(number_story == 30)
     {
         intro();
     }
@@ -649,8 +650,6 @@ function story_teller()
     number_story += 1;
     text.innerHTML = storys[number_story];
 }
-
-
 
 function start_story()
 {
@@ -666,8 +665,6 @@ function start_story()
     btn[1].innerHTML = "next >";
     btn[1].onclick = story_teller;
 } 
-
-// intro();
 
 function intro()
 {
@@ -760,6 +757,7 @@ achtertuin_barrol_contains,
 place_items[ic].push("sleutel3");
 
 
+// als je wilt cheaten
 console.log("kast1: "+kast_1_contains)
 console.log("kast2: "+kast_2_contains)
 console.log("kast3: "+kast_3_contains)
@@ -827,7 +825,7 @@ function woon_kamer()
 {
     btn[1].style.visibility='hidden';
     canvas.setAttribute("src", levels.woonkamer_begin.gif);
-    text.innerHTML = "Nu moet ik het doen anders... anders? uhm dat heeft ze niet gezegt.";
+    text.innerHTML = "zo moelijk kan het toch niet zijn... toch?";
     setTimeout(function(){
         woon_kamer_terug_style();
     },levels.woonkamer_begin.time);
@@ -1052,6 +1050,8 @@ function stoel1()
     canvas.setAttribute("src", levels.stoel_1.gif);
 
     verliezen();
+    
+    text.innerHTML = "toch even snel hier kijken";
 
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
@@ -1067,7 +1067,7 @@ function stoel1()
         btn[1].style.top = "82%";
         btn[1].style.left = "41%";
 
-        text.innerHTML = "toch even snel hier kijken"
+       
 
         if(stoel_1_contains.includes('sleutel1') || stoel_1_contains.includes('sleutel2') || stoel_1_contains.includes('sleutel3')){
 
@@ -1223,6 +1223,7 @@ function openhaard()
     canvas.setAttribute("src", levels.openhaard.gif);
 
     text.innerHTML = "Rare plek maar kijken waard"
+    
 
     verliezen();
 
@@ -1335,7 +1336,7 @@ function naar_auto()
 {
     canvas.setAttribute("src", levels.naar_auto.gif);
 
-    text.innerHTML = "ik heb nog nier alle onderdelen"
+    text.innerHTML = "ik heb nog niet alle onderdelen";
 
     verliezen();
 
@@ -1361,6 +1362,8 @@ function naar_auto()
             btn[2].onclick = win;
             btn[2].style.left = "41%";
             btn[2].style.top = "44%";
+
+            text.innerHTML = "We hebben alles";
         }
     }, levels.naar_auto.time);
 }
@@ -1742,6 +1745,8 @@ function keuken_1()
 {
     canvas.setAttribute("src", levels.keuken_1.gif);
 
+    text.innerHTML = "Op de keuken dan";
+
     verliezen();
 
     for(i = 1; i <= 8; i++){
@@ -1795,6 +1800,8 @@ function keuken_1_t()
 function keuken_2()
 {
     canvas.setAttribute("src", levels.keuken_2.gif);
+
+    text.innerHTML = "Misschien hier";
 
     verliezen();
 
@@ -1864,6 +1871,8 @@ function rechts_achter_style()
 {
     verliezen();
 
+    text.innerHTML = "Kelder... of terug.";
+
     canvas.setAttribute("src", levels.rechts_achter_kijken.jpg);
     btn[1].style.visibility = "visible";
     btn[1].disabled = false;
@@ -1898,7 +1907,7 @@ function naar_boven()
 {
     canvas.setAttribute("src", levels.naar_boven.gif);
 
-
+    text.innerHTML = "Boven dan";
 
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
@@ -2082,7 +2091,7 @@ function kamer_3()
     {
         canvas.setAttribute("src", levels.kamer_3.gif);
 
-        
+        text.innerHTML = "Even checken";
 
         verliezen();
 
@@ -2139,6 +2148,8 @@ function kamer_3()
 function kamer_3_bed()
 {
     canvas.setAttribute("src", levels.kamer_3_bed.gif);
+
+    text.innerHTML = "Wat ligt hier ?";
 
     verliezen();
 
@@ -2232,7 +2243,7 @@ function kamer_2()
     canvas.setAttribute("src", levels.kamer_2.gif);
 
     verliezen();
-
+    text.innerHTML = "Even kijken dan";
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
         btn[i].disabled = true;
@@ -2351,6 +2362,8 @@ function kamer_2_kastje()
 
     verliezen();
 
+    text.innerHTML = "misschien hier dan";
+
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
         btn[i].disabled = true;
@@ -2405,6 +2418,7 @@ function boven_kast_1()
     canvas.setAttribute("src", levels.boven_kast_1.gif);
 
     verliezen();
+    text.innerHTML = "Deze kast dan";
 
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
@@ -2461,6 +2475,8 @@ function boven_kast_2()
 
     verliezen();
 
+    text.innerHTML = "even snel kijken";
+
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
         btn[i].disabled = true;
@@ -2513,6 +2529,8 @@ function boven_kast_2_t()
 function achtertuin()
 {
     canvas.setAttribute("src", levels.achtertuin.gif);
+
+    text.innerHTML = "Frisse lucht, veel kanzen";
 
     verliezen();
 
@@ -2576,11 +2594,15 @@ function achtertuin_style()
     btn[4].style.left = "0%";
     btn[4].style.top = "31%"; 
     btn[4].style.height = "100px";
+
+    text.innerHTML = "Brrr.. het word koud";
 }
 
 function wc()
 {
     canvas.setAttribute("src", levels.achtertuin_smallroom.gif);
+
+    text.innerHTML = "Bah.. beter vind ik hier wat";
 
     verliezen();
 
@@ -2613,7 +2635,7 @@ function wc()
 
         else
         {
-            text.innerHTML = "Er zit niks in deze kast."
+            text.innerHTML = "Er zit niks in deze wc."
         }
     }, levels.achtertuin_smallroom.time);
 }
@@ -2635,6 +2657,8 @@ function wc_t()
 function barrol()
 {
     canvas.setAttribute("src", levels.achtertuin_barrol.gif);
+
+    text.innerHTML = "Waarom zou je zo veel bezine willen opslaan?";
 
     verliezen();
 
@@ -2667,7 +2691,7 @@ function barrol()
 
         else
         {
-            text.innerHTML = "Er zit niks in deze kast."
+            text.innerHTML = "Er ligt niks op de barrols"
         }
     }, levels.achtertuin_barrol.time);
 }
@@ -2691,6 +2715,8 @@ function achtertuin_dozen()
     canvas.setAttribute("src", levels.achtertuin_dozen.gif);
 
     verliezen();
+
+    text.innerHTML = "Hier dan?";
 
     for(i = 1; i <= 8; i++){
         btn[i].style.visibility = "hidden";
@@ -2721,7 +2747,7 @@ function achtertuin_dozen()
 
         else
         {
-            text.innerHTML = "Er zit niks in deze kast."
+            text.innerHTML = "Er zit niks in deze dozen"
         }
     }, levels.achtertuin_dozen.time);
 }
@@ -2743,6 +2769,8 @@ function achtertuin_dozen_t()
 function kelder()
 {
     canvas.setAttribute("src", levels.kelder.gif);
+
+    text.innerHTML = "Ik wil hier niet lang blijven";
 
     verliezen();
 
@@ -2800,11 +2828,6 @@ function kelder_t()
     setTimeout(function(){
         rechts_achter_style();
     }, levels.kelder_t.time);
-}
-
-function deze_veranderen()
-{
-    window.alert("verander deze function")
 }
 
 function take_gear()
@@ -3013,9 +3036,9 @@ function take_key_dozen()
 
     dozen_key +=1
 
-    for(var i = 0; i < achtertuin_dozen_contains.length; i++) {
-        inventory.push(achtertuin_dozen_contains[i]);
-        achtertuin_dozen_contains.splice(i, 1);
+    for(var i = 0; i < dozen_contains.length; i++) {
+        inventory.push(dozen_contains[i]);
+        dozen_contains.splice(i, 1);
         i--; 
     }
 
